@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url();
+    background-size: cover;
+}
+
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #444;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    color: wheat;
+    padding: 0;
+}
+
+nav li {
+    color: white;
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white; /* Increase specificity to override other styles */
+    text-align: center;
+    text-decoration: none;
+}
+
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section {
+    flex: 80%;
+}
+
+aside {
+    flex: 20%;
+    height: 60vh;
+
+}
+
+.side {
+    height: 30vh;
+    display: center;
+    line-height: 30vh;
+}
+
+.side input {
+    align-items: center;
+    display: block;
+    margin: 10px;
+}
+
+#arrow {
+    border: 5px solid whitesmoke;
+    border-radius: 50%;
+    display: inline-block;
+    size-adjust: 10%;
+    
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.abc{
+    height: 40%; float: left;
+    flex-wrap: wrap;
+}
+
+.abcd{
+    height: 50%; float: right;
+    flex-wrap: wrap;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    display: inline;
+    color: black;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: relative;
+    background-color: #444;
+    min-width: 160px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    text-decoration: #333;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content li {
+    padding: 10px;
+}
+
+.course {
+    border: none;
+    border-bottom: 20px;
+    outline: none;
+}
+
+.course option {
+    border-bottom: 10px;
+
+}
+
+
+@media (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    nav {
+        padding: 5px;
+    }
+    main {
+        flex-direction: column;
+    }
+}
